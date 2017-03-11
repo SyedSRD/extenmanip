@@ -1,0 +1,154 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 16, 2017, 3:37:02 PM
+    Author     : Syed
+*/
+
+
+
+
+.root{
+    
+    -fx-background-color:radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),rgba(255,255,255,0)),#090a0c;
+    
+}
+
+.button1{
+    
+    -fx-background-radius: 10;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: linear-gradient(azure,black,azure);
+
+}
+
+.button .text {
+
+    -fx-effect: dropshadow( one-pass-box , rgba(0, 0, 0, 0.8), 0, 0.0 , 0 , -1 );
+
+}
+
+.button {
+
+    -fx-background-color:
+        rgba(255, 255, 255, 0.08),
+        rgba(0, 0, 0, 0.8),
+        #090a0c,
+        linear-gradient(#4a5661 0%, #1f2429 20%, #1f242a 100%),
+        linear-gradient(#242a2e, #23282e),
+        radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),
+        rgba(255,255,255,0));
+    -fx-background-radius: 7;
+    -fx-background-insets: -3 -3 -4 -3, -3, 0, 1, 2, 0;
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-padding: 10 20 10 20;
+
+}
+
+.button:focused, .button:hover {
+
+    -fx-background-color:
+        rgba(255, 255, 255, 0.08),
+        rgba(0, 0, 0, 0.8),
+        #090a0c,
+        linear-gradient(#4a5661 0%, #1f2429 20%, #1f242a 100%),
+        linear-gradient(#3f4950, #23282e),
+        radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),
+        rgba(255,255,255,0));
+
+}
+
+.label{
+
+     -fx-text-fill:white;
+     -fx-font-weight:bold;
+     -fx-effect: dropshadow(gaussian ,rgba(255,255,255,0.5) ,0,0,0,1);
+
+}
+
+.radio-button{
+
+    -fx-text-fill:grey;
+    -fx-font-weight:lighter;
+    -fx-font-family:system;
+    -fx-font-size:15px; 
+     
+}
+
+.radio-button:focused ,.radio-button:selected{
+
+     -fx-text-fill:white;
+     -fx-font-weight:bold;
+     -fx-effect: dropshadow(gaussian ,rgba(255,255,255,0.0) ,0,0,0,1);
+     
+}
+
+.menubar{
+    
+    -fx-background-color:radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),
+        rgba(255,255,255,0)),#1f242a;
+    -fx-background-radius: 5;
+    
+}
+
+.menubar:hover{
+    
+    -fx-background-color:radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),
+        rgba(255,255,255,0)),black;
+    -fx-background-radius: 15;
+    
+}
+
+.menu{
+     -fx-font-family:"Arial Black";
+     -fx-fill: black;
+     -fx-effect: innershadow(three-pass-box ,rgba(0,0,0,1) ,6,0.0,0,1) ;
+     -fx-background-color:radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),
+        rgba(255,255,255,0));
+     
+}
+
+.menu:hover{
+
+    -fx-background-color:radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),rgba(255,255,255,0)),#4a5661; 
+
+}
+.menu-item{
+
+     -fx-font-family:"Arial Black";
+     -fx-background-color: black;
+     
+}
+
+.menu-item:hover{
+    
+    -fx-font-family:"Arial Black";
+    -fx-background-color: grey;
+       
+}
+
+#tooltiptext1{
+
+    -fx-font-size:10; 
+    -fx-font-family:fantacy;
+    -fx-background-radius: 10;
+    -fx-background-color: #23282e;
+
+}
+
+#labeltext{
+
+    -fx-text-fill:red;
+    -fx-effect: innershadow(three-pass-box ,rgba(0,0,0,0.7) ,6,0.0,0,2);
+
+}
+
+#ima{
+
+    -fx-background-image: url("best-fight-club-quotes-no-fear-no-distractions.jpg");
+
+}

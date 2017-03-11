@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="567.0" prefWidth="672.0" stylesheets="@../sip.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="extmanipulator.extManifxController">
+   <children>
+      <Button fx:id="pB" alignment="CENTER" contentDisplay="CENTER" layoutX="267.0" layoutY="463.0" mnemonicParsing="false" onAction="#proceedAction" prefHeight="31.0" prefWidth="142.0" text="Proceed" />
+      <VBox layoutX="7.0" layoutY="174.0" prefHeight="221.0" prefWidth="658.0" spacing="10.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="647.0" />
+            <HBox spacing="20.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label prefHeight="33.0" prefWidth="110.0" text="Select Folder :" />
+                  <TextField fx:id="textField1" prefHeight="31.0" prefWidth="301.0" promptText="C:/user/users/extMan" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#butaction" prefHeight="37.0" prefWidth="111.0" text="Browse..." />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox fx:id="vb" prefHeight="162.0" prefWidth="638.0">
+               <children>
+                  <HBox prefHeight="39.0" prefWidth="557.0" spacing="25.0" VBox.vgrow="NEVER">
+                     <children>
+                        <RadioButton fx:id="radioButton1" mnemonicParsing="false" prefHeight="21.0" prefWidth="227.0" text="Add Extension" textAlignment="CENTER" />
+                        <Label prefHeight="21.0" prefWidth="133.0" text="Add :" />
+                        <TextField fx:id="radioTextField1" disable="true" prefHeight="31.0" prefWidth="380.0" promptText="Example : &quot; .exe &quot; ,&quot;.mp3 &quot; etc" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="48.0" prefWidth="557.0" spacing="25.0" VBox.vgrow="NEVER">
+                     <children>
+                        <RadioButton fx:id="radioButton2" mnemonicParsing="false" prefHeight="21.0" prefWidth="184.0" text="Change Extension" />
+                        <Label prefHeight="21.0" prefWidth="104.0" text="Change :" />
+                        <TextField fx:id="radioTextField2" disable="true" prefHeight="31.0" prefWidth="148.0" promptText="Example : &quot; .exe &quot; " />
+                        <Label prefHeight="21.0" prefWidth="44.0" text="To :" />
+                        <TextField fx:id="radioTextField3" disable="true" prefHeight="31.0" prefWidth="129.0" promptText="&quot;.mp3 &quot; etc" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <RadioButton fx:id="radioButton3" mnemonicParsing="false" prefHeight="21.0" prefWidth="184.0" text="Remove Extension" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="507.0" prefHeight="32.0" prefWidth="638.0" text="Computing" textAlignment="CENTER" textFill="#eb0404">
+         <font>
+            <Font name="Constantia" size="26.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <MenuBar prefHeight="32.0" prefWidth="672.0" styleClass="menubar">
+        <menus>
+          <Menu mnemonicParsing="false" styleClass="menuitems" text="File">
+            <items>
+              <MenuItem fx:id="cls" mnemonicParsing="false" onAction="#closeApp" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" styleClass="menuitems" text="Edit">
+            
+          </Menu>
+          <Menu mnemonicParsing="false" styleClass="menuitems" text="Help">
+           
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox id="ima" layoutX="86.0" layoutY="43.0" prefHeight="154.0" prefWidth="500.0" />
+      <Label fx:id="llb1" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="422.0" prefHeight="21.0" prefWidth="638.0" text="Before you begin please make sure there is no other file exist with the same name." textAlignment="CENTER" textFill="#e4d3d3">
+         <font>
+            <Font name="Constantia" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+   </children>
+</Pane>
